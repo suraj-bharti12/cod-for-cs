@@ -1,0 +1,77 @@
+# # query RunInput {
+# #   cart {
+# #     deliveryGroups {
+# #       deliveryAddress {
+# #         zip
+# #       }
+# #     }
+# #   }
+# #   paymentMethods {
+# #     id
+# #     name
+# #   }
+# # }
+
+# query RunInput {
+#   cart {
+#     buyerIdentity {
+#       email
+#     }
+#   }
+#   paymentMethods {
+#     id
+#     name
+#   }
+# }
+
+# # query RunInput {
+# #   cart {
+# #     buyerIdentity {
+# #       phone
+# #     }
+# #     deliveryGroups {
+# #       deliveryAddress {
+# #         phone
+# #       }
+# #     }
+# #   }
+# #   paymentMethods {
+# #     id
+# #     name
+# #   }
+# # }
+
+
+
+query RunInput {
+  cart {
+    cost {
+      totalAmount {
+        amount
+      }
+    }
+    buyerIdentity {
+      email
+      phone
+    }
+    deliveryGroups {
+      deliveryAddress {
+        phone
+        zip
+        provinceCode
+      }
+    }
+  }
+  paymentMethods {
+    id
+    name
+  }
+}
+
+
+
+
+
+
+
+

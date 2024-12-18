@@ -1,0 +1,24 @@
+{
+  "name": "cod-for-cs",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "build:function": "shopify app function build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+}
+,
+  "dependencies": {},
+  "trustedDependencies": [
+    "@shopify/plugin-cloudflare"
+  ],
+  "author": "MOJITO LAB",
+  "private": true,
+  "workspaces": [
+    "extensions/*"
+  ]
+}
